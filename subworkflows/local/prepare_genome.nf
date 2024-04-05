@@ -22,7 +22,7 @@ workflow PREPARE_GENOME {
     }
 
     // Aligner: bismark or bismark_hisat
-    if( params.aligner =~ /bismark/ ){
+    if( params.aligner == 'bismark' || params.aligner == 'bismark_hisat' ){
 
         /*
          * Generate bismark index if not supplied

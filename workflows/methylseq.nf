@@ -150,7 +150,7 @@ workflow METHYLSEQ {
      */
 
     // Aligner: bismark or bismark_hisat
-    if( params.aligner =~ /bismark/ ){
+    if( params.aligner == 'bismark' || params.aligner == 'bismark_hisat' ){
 
         /*
          * Run Bismark alignment + downstream processing
