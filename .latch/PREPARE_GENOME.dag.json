@@ -13,7 +13,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -29,7 +31,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -45,7 +49,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -61,7 +67,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -77,7 +85,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -93,7 +103,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -109,7 +121,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -125,7 +139,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -139,7 +155,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -155,7 +173,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -171,7 +191,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -187,7 +209,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -203,7 +227,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -219,7 +245,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -235,7 +263,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -251,7 +281,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -267,7 +299,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -283,7 +317,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -299,7 +335,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -315,7 +353,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -331,7 +371,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -349,7 +391,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/untar/main.nf",
-                "unaliased": "UNTAR"
+                "unaliased": "UNTAR",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -365,7 +409,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -381,7 +427,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -395,7 +443,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -413,7 +463,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/genomepreparation/main.nf",
-                "unaliased": "BISMARK_GENOMEPREPARATION"
+                "unaliased": "BISMARK_GENOMEPREPARATION",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -429,7 +481,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -443,7 +497,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -457,7 +513,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -473,7 +531,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -489,7 +549,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -505,7 +567,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -521,7 +585,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -537,7 +603,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -553,7 +621,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -569,7 +639,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -585,7 +657,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -601,7 +675,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -617,7 +693,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -635,7 +713,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/untar/main.nf",
-                "unaliased": "UNTAR"
+                "unaliased": "UNTAR",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -651,7 +731,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -667,7 +749,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -681,7 +765,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -699,7 +785,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bwameth/index/main.nf",
-                "unaliased": "BWAMETH_INDEX"
+                "unaliased": "BWAMETH_INDEX",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -715,7 +803,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -729,7 +819,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -743,7 +835,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -757,7 +851,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -773,7 +869,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -789,7 +887,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -805,7 +905,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -821,7 +923,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -841,7 +945,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/faidx/main.nf",
-                "unaliased": "SAMTOOLS_FAIDX"
+                "unaliased": "SAMTOOLS_FAIDX",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -857,7 +963,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -873,7 +981,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -887,7 +997,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -901,7 +1013,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -915,7 +1029,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -929,7 +1045,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -943,7 +1061,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -957,7 +1077,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -971,7 +1093,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -986,7 +1110,9 @@
                     "versions"
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -1000,7 +1126,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -1014,7 +1142,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -1028,7 +1158,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         },
         {
@@ -1044,7 +1176,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "PREPARE_GENOME",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/prepare_genome.nf"
             }
         }
     ],

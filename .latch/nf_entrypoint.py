@@ -57,7 +57,7 @@ def _params_aligner____bismark__693(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bismark"}}}}},"labels":[]}}',
@@ -112,7 +112,7 @@ def _params_aligner____bismark_hisat__694(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bismark_hisat"}}}}},"labels":[]}}',
@@ -169,7 +169,7 @@ def __params_aligner____bismark______params_aligner____bismark_hisat_695(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"binaryOp","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"ConstantExpression":"||"}]}}}}}},"labels":[]}}',
@@ -225,7 +225,7 @@ def __params_aligner____bismark______params_aligner____bismark_hisat_696(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -281,7 +281,7 @@ def conditional___params_aligner____bismark______params_aligner____bismark_hisat
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -340,7 +340,7 @@ def params_bismark_index_698(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bismark_index"}}}}}},"labels":[]}}',
@@ -397,7 +397,7 @@ def conditional_params_bismark_index_699(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -457,7 +457,7 @@ def params_bismark_index_endsWith__gz__700(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bismark_index"}},"method":"endsWith","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":".gz"}]}}}}}},"labels":[]}}',
@@ -515,7 +515,7 @@ def params_bismark_index_endsWith__gz__701(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -573,7 +573,7 @@ def conditional_params_bismark_index_endsWith__gz__702(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -634,7 +634,7 @@ def this_file_params_bismark_index__703(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bismark_index"}}]}}}}}},"labels":[]}}',
@@ -693,7 +693,7 @@ def ______this_file_params_bismark_index___704(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"ListExpression":[{"MapExpression":[]},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}},"labels":[]}}',
@@ -798,10 +798,9 @@ def UNTAR_705(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/prepare_genome.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','PREPARE_GENOME'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/untar/main.nf", "alias": "UNTAR", "name": "UNTAR"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"UNTAR","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"untar\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"UNTAR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"UNTAR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -811,9 +810,7 @@ def UNTAR_705(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -856,7 +853,7 @@ def _params_aligner____bwameth__713(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bwameth"}}}}},"labels":[]}}',
@@ -913,7 +910,7 @@ def _params_aligner____bwameth__714(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -970,7 +967,7 @@ def conditional__params_aligner____bwameth__715(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1030,7 +1027,7 @@ def params_bwa_meth_index_716(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bwa_meth_index"}}}}}},"labels":[]}}',
@@ -1088,7 +1085,7 @@ def conditional_params_bwa_meth_index_717(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1149,7 +1146,7 @@ def params_bwa_meth_index_endsWith__tar_gz__718(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bwa_meth_index"}},"method":"endsWith","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":".tar.gz"}]}}}}}},"labels":[]}}',
@@ -1208,7 +1205,7 @@ def params_bwa_meth_index_endsWith__tar_gz__719(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1267,7 +1264,7 @@ def conditional_params_bwa_meth_index_endsWith__tar_gz__720(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1329,7 +1326,7 @@ def this_file_params_bwa_meth_index__721(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bwa_meth_index"}}]}}}}}},"labels":[]}}',
@@ -1389,7 +1386,7 @@ def ______this_file_params_bwa_meth_index___722(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"ListExpression":[{"MapExpression":[]},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}},"labels":[]}}',
@@ -1495,10 +1492,9 @@ def UNTAR_723(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/prepare_genome.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','PREPARE_GENOME'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/untar/main.nf", "alias": "UNTAR", "name": "UNTAR"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"UNTAR","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"untar\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"UNTAR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"UNTAR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -1508,9 +1504,7 @@ def UNTAR_723(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -1585,7 +1579,7 @@ def _params_aligner____bismark__773(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bismark"}}}}},"labels":[]}}',
@@ -1640,7 +1634,7 @@ def _params_aligner____bismark_hisat__774(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bismark_hisat"}}}}},"labels":[]}}',
@@ -1697,7 +1691,7 @@ def __params_aligner____bismark______params_aligner____bismark_hisat_775(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"binaryOp","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"ConstantExpression":"||"}]}}}}}},"labels":[]}}',
@@ -1753,7 +1747,7 @@ def __params_aligner____bismark______params_aligner____bismark_hisat_776(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1809,7 +1803,7 @@ def conditional___params_aligner____bismark______params_aligner____bismark_hisat
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1868,7 +1862,7 @@ def _params_aligner____bwameth__832(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"aligner"}},"operation":"==","rightExpression":{"ConstantExpression":"bwameth"}}}}},"labels":[]}}',
@@ -1925,7 +1919,7 @@ def _params_aligner____bwameth__833(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -1982,7 +1976,7 @@ def conditional__params_aligner____bwameth__834(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2042,7 +2036,7 @@ def _params_skip_deduplication____params_rrbs__835(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"skip_deduplication"}},"operation":"||","rightExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"rrbs"}}}}]}}}}}},"labels":[]}}',
@@ -2100,7 +2094,7 @@ def skip_deduplication_849(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2158,7 +2152,7 @@ def conditional_skip_deduplication_850(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2219,7 +2213,7 @@ def Channel_empty___852(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2274,7 +2268,7 @@ def params_skip_trimming_765(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"skip_trimming"}}}}}},"labels":[]}}',
@@ -2330,7 +2324,7 @@ def params_skip_trimming_766(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2386,7 +2380,7 @@ def conditional_params_skip_trimming_767(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2444,7 +2438,7 @@ def Channel_fromSamplesheet_input__752(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"fromSamplesheet","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":"input"}]}}}}}},"labels":[]}}',
@@ -2500,7 +2494,7 @@ def map_753(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"IfStatement":{"booleanExpression":{"BooleanExpression":{"NotExpression":{"VariableExpression":"fastq_2"}}},"ifBlock":{"BlockStatement":{"statements":[{"ReturnStatement":{"ListExpression":[{"BinaryExpression":{"leftExpression":{"VariableExpression":"meta"},"operation":"+","rightExpression":{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"single_end"},"valueExpression":{"ConstantExpression":true}}}]}}},{"ListExpression":[{"VariableExpression":"fastq_1"}]}]}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"elseBlock":{"BlockStatement":{"statements":[{"ReturnStatement":{"ListExpression":[{"BinaryExpression":{"leftExpression":{"VariableExpression":"meta"},"operation":"+","rightExpression":{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"single_end"},"valueExpression":{"ConstantExpression":false}}}]}}},{"ListExpression":[{"VariableExpression":"fastq_1"},{"VariableExpression":"fastq_2"}]}]}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"labels":[]}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":["meta","fastq_1","fastq_2"]}}]}}}}}},"labels":[]}}',
@@ -2556,7 +2550,7 @@ def groupTuple_754(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"groupTuple","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -2612,7 +2606,7 @@ def map_755(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"meta_clone"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"meta"},"method":"clone","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}},{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"parts"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"meta_clone"},"property":"id"}},"method":"split","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":"_"}]}}}}}},"labels":[]}},{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"meta_clone"},"property":"id"}},"operation":"=","rightExpression":{"TernaryExpression":{"booleanExpression":{"BooleanExpression":{"MethodCallExpression":{"objectExpression":{"ClassExpression":{"type":"nextflow.ast.LangHelpers"}},"method":"compareGreaterThan","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"parts"},"property":"length"}},{"ConstantExpression":1}]}}}}},"trueExpression":{"MethodCallExpression":{"objectExpression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"parts"},"operation":"[","rightExpression":{"RangeExpression":{"from":{"ConstantExpression":0},"to":{"ConstantExpression":-2},"inclusive":true}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":"_"}]}}}},"falseExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"meta_clone"},"property":"id"}}}}}},"labels":[]}},{"ReturnStatement":{"ListExpression":[{"VariableExpression":"meta_clone"},{"VariableExpression":"fastq"}]}}],"scope":{"declaredVariables":["meta_clone"],"referencedClassVariables":["parts","compareGreaterThan"]},"labels":[]}},"parameters":["meta","fastq"]}}]}}}}}},"labels":[]}}',
@@ -2668,7 +2662,7 @@ def groupTuple_756(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"groupTuple","arguments":{"ArgumentListExpression":{"expressions":[{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"by"},"valueExpression":{"ListExpression":[{"ConstantExpression":0}]}}}]}]}}}}}},"labels":[]}}',
@@ -2725,7 +2719,7 @@ def branch_757(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"branch","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"ClassExpression":{"type":"nextflow.ast.LangHelpers"}},"method":"compareEqual","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"fastq"},"method":"size","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"ConstantExpression":1}]}}}},"labels":["single"]}},{"ReturnStatement":{"ConstructorCallExpression":{"type":"nextflow.script.TokenBranchChoice","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[{"VariableExpression":"meta"},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"fastq"},"method":"flatten","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]},{"ConstantExpression":"single"}]}}}}},{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"ClassExpression":{"type":"nextflow.ast.LangHelpers"}},"method":"compareGreaterThan","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"fastq"},"method":"size","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"ConstantExpression":1}]}}}},"labels":["multiple"]}},{"ReturnStatement":{"ConstructorCallExpression":{"type":"nextflow.script.TokenBranchChoice","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[{"VariableExpression":"meta"},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"fastq"},"method":"flatten","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]},{"ConstantExpression":"multiple"}]}}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":["meta","fastq"]}}]}}}}}},"labels":[]}}',
@@ -2828,10 +2822,9 @@ def CAT_FASTQ_758(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/cat/fastq/main.nf", "alias": "CAT_FASTQ", "name": "CAT_FASTQ"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"CAT_FASTQ","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"reads\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"CAT_FASTQ\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"CAT_FASTQ\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -2841,9 +2834,7 @@ def CAT_FASTQ_758(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -2887,7 +2878,7 @@ def mix_759(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -2998,10 +2989,9 @@ def TRIMGALORE_768(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/trimgalore/main.nf", "alias": "TRIMGALORE", "name": "TRIMGALORE"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"TRIMGALORE","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"reads\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"log\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"unpaired\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"html\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"zip\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":4}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"TRIMGALORE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":5}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -3011,9 +3001,7 @@ def TRIMGALORE_768(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -3088,7 +3076,7 @@ def Channel_empty___687(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -3143,7 +3131,7 @@ def params_fasta_689(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"fasta"}}}}}},"labels":[]}}',
@@ -3199,7 +3187,7 @@ def conditional_params_fasta_690(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -3258,7 +3246,7 @@ def Channel_value_this_file_params_fasta___691(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"fasta"}}]}}}}]}}}}}},"labels":[]}}',
@@ -3313,7 +3301,7 @@ def Channel_empty___685(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -3447,10 +3435,9 @@ def BWAMETH_INDEX_727(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/prepare_genome.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','PREPARE_GENOME'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bwameth/index/main.nf", "alias": "BWAMETH_INDEX", "name": "BWAMETH_INDEX"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BWAMETH_INDEX","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"index\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BWAMETH_INDEX\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BWAMETH_INDEX\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -3460,9 +3447,7 @@ def BWAMETH_INDEX_727(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -3645,10 +3630,9 @@ def BWAMETH_ALIGN_837(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bwameth/align/main.nf", "alias": "BWAMETH_ALIGN", "name": "BWAMETH_ALIGN"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BWAMETH_ALIGN","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BWAMETH_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BWAMETH_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -3658,9 +3642,7 @@ def BWAMETH_ALIGN_837(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -3753,10 +3735,9 @@ def SAMTOOLS_SORT_839(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/sort/main.nf", "alias": "SAMTOOLS_SORT", "name": "SAMTOOLS_SORT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_SORT","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"csi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -3766,9 +3747,7 @@ def SAMTOOLS_SORT_839(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -3811,7 +3790,7 @@ def Channel_empty___688(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -3868,7 +3847,7 @@ def params_fasta_index_732(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"fasta_index"}}}}}},"labels":[]}}',
@@ -3926,7 +3905,7 @@ def conditional_params_fasta_index_733(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -3987,7 +3966,7 @@ def Channel_value_this_file_params_fasta_index___734(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"fasta_index"}}]}}}}]}}}}}},"labels":[]}}',
@@ -4046,7 +4025,7 @@ def ______ch_fasta__735(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"ListExpression":[{"MapExpression":[]},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}},"labels":[]}}',
@@ -4153,10 +4132,9 @@ def SAMTOOLS_FAIDX_736(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/prepare_genome.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','PREPARE_GENOME'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/faidx/main.nf", "alias": "SAMTOOLS_FAIDX", "name": "SAMTOOLS_FAIDX"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_FAIDX","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"fai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_FAIDX\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"gzi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_FAIDX\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_FAIDX\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -4166,9 +4144,7 @@ def SAMTOOLS_FAIDX_736(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -4215,7 +4191,7 @@ def map_737(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -4418,10 +4394,9 @@ def PICARD_MARKDUPLICATES_853(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/picard/markduplicates/main.nf", "alias": "PICARD_MARKDUPLICATES", "name": "PICARD_MARKDUPLICATES"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"PICARD_MARKDUPLICATES","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PICARD_MARKDUPLICATES\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PICARD_MARKDUPLICATES\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"metrics\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PICARD_MARKDUPLICATES\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PICARD_MARKDUPLICATES\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -4431,9 +4406,7 @@ def PICARD_MARKDUPLICATES_853(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -4508,7 +4481,7 @@ def params_skip_multiqc_898(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"skip_multiqc"}}}}}},"labels":[]}}',
@@ -4564,7 +4537,7 @@ def params_skip_multiqc_899(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -4620,7 +4593,7 @@ def conditional_params_skip_multiqc_900(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -4679,7 +4652,7 @@ def WorkflowMethylseq_paramsSummaryMultiqc_workflow__summary_params__901(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"WorkflowMethylseq"},"method":"paramsSummaryMultiqc","arguments":{"ArgumentListExpression":{"expressions":[{"VariableExpression":"workflow"},{"VariableExpression":"summary_params"}]}}}}}},"labels":[]}}',
@@ -4735,7 +4708,7 @@ def WorkflowMethylseq_methodsDescriptionText_workflow__ch_multiqc_cu_903(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"WorkflowMethylseq"},"method":"methodsDescriptionText","arguments":{"ArgumentListExpression":{"expressions":[{"VariableExpression":"workflow"},{"VariableExpression":"ch_multiqc_custom_methods_description"},{"VariableExpression":"params"}]}}}}}},"labels":[]}}',
@@ -4791,7 +4764,7 @@ def params_skip_trimming_920(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"skip_trimming"}}}}}},"labels":[]}}',
@@ -4848,7 +4821,7 @@ def params_skip_trimming_921(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -4905,7 +4878,7 @@ def conditional_params_skip_trimming_922(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -4964,7 +4937,7 @@ def Channel_empty___905(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -5020,7 +4993,7 @@ def Channel_value_workflow_summary__902(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"VariableExpression":"workflow_summary"}]}}}}}},"labels":[]}}',
@@ -5077,7 +5050,7 @@ def collectFile_906(
         download_files(channel_vals, LatchDir('latch://22353.account/your_output_directory'))
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collectFile","arguments":{"ArgumentListExpression":{"expressions":[{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"name"},"valueExpression":{"ConstantExpression":"workflow_summary_mqc.yaml"}}}]}]}}}}}},"labels":[]}}',
@@ -5135,7 +5108,7 @@ def mix_907(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -5191,7 +5164,7 @@ def Channel_value_methods_description__904(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"VariableExpression":"methods_description"}]}}}}}},"labels":[]}}',
@@ -5248,7 +5221,7 @@ def collectFile_908(
         download_files(channel_vals, LatchDir('latch://22353.account/your_output_directory'))
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collectFile","arguments":{"ArgumentListExpression":{"expressions":[{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"name"},"valueExpression":{"ConstantExpression":"methods_description_mqc.yaml"}}}]}]}}}}}},"labels":[]}}',
@@ -5306,7 +5279,7 @@ def mix_909(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -5361,7 +5334,7 @@ def Channel_empty___683(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -5416,7 +5389,7 @@ def Channel_empty___684(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -5520,10 +5493,9 @@ def BISMARK_GENOMEPREPARATION_709(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/prepare_genome.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','PREPARE_GENOME'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/genomepreparation/main.nf", "alias": "BISMARK_GENOMEPREPARATION", "name": "BISMARK_GENOMEPREPARATION"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_GENOMEPREPARATION","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"index\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_GENOMEPREPARATION\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_GENOMEPREPARATION\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -5533,9 +5505,7 @@ def BISMARK_GENOMEPREPARATION_709(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -5581,7 +5551,7 @@ def mix_710(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -5671,7 +5641,7 @@ def mix_728(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -5762,7 +5732,7 @@ def mix_738(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -5908,7 +5878,7 @@ def ifEmpty_750(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ConstantExpression":null}]}}}}}},"labels":[]}}',
@@ -5965,7 +5935,7 @@ def mix_751(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -6021,7 +5991,7 @@ def first_760(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"first","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6078,7 +6048,7 @@ def mix_761(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -6182,10 +6152,9 @@ def FASTQC_762(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/fastqc/main.nf", "alias": "FASTQC", "name": "FASTQC"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"FASTQC","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"html\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"FASTQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"zip\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"FASTQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"FASTQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -6195,9 +6164,7 @@ def FASTQC_762(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -6241,7 +6208,7 @@ def first_763(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"first","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6298,7 +6265,7 @@ def mix_764(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -6355,7 +6322,7 @@ def first_769(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"first","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6413,7 +6380,7 @@ def mix_770(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -6498,7 +6465,7 @@ def _params_cytosine_report____params_nomeseq__779(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"cytosine_report"}},"operation":"||","rightExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"nomeseq"}}}}]}}}}}},"labels":[]}}',
@@ -6555,7 +6522,7 @@ def cytosine_report_796(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6612,7 +6579,7 @@ def conditional_cytosine_report_797(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6671,7 +6638,7 @@ def Channel_empty___780(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -6730,7 +6697,7 @@ def map_706(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -6788,7 +6755,7 @@ def Channel_value_this_file_params_bismark_index___707(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bismark_index"}}]}}}}]}}}}}},"labels":[]}}',
@@ -6909,7 +6876,7 @@ def map_724(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -6968,7 +6935,7 @@ def Channel_value_this_file_params_bwa_meth_index___725(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"file","arguments":{"ArgumentListExpression":{"expressions":[{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bwa_meth_index"}}]}}}}]}}}}}},"labels":[]}}',
@@ -7055,7 +7022,7 @@ def Channel_empty___686(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/prepare_genome.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'PREPARE_GENOME'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -7254,10 +7221,9 @@ def BISMARK_ALIGN_781(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/align/main.nf", "alias": "BISMARK_ALIGN", "name": "BISMARK_ALIGN"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_ALIGN","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"unmapped\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_ALIGN\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -7267,9 +7233,7 @@ def BISMARK_ALIGN_781(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -7316,7 +7280,7 @@ def mix_782(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -7421,10 +7385,9 @@ def SAMTOOLS_SORT_ALIGNED_783(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/sort/main.nf", "alias": "SAMTOOLS_SORT_ALIGNED", "name": "SAMTOOLS_SORT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_SORT_ALIGNED","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_ALIGNED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"csi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_ALIGNED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_ALIGNED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -7434,9 +7397,7 @@ def SAMTOOLS_SORT_ALIGNED_783(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -7482,7 +7443,7 @@ def mix_784(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -7538,7 +7499,7 @@ def _params_skip_deduplication____params_rrbs__778(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"BinaryExpression":{"leftExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"skip_deduplication"}},"operation":"||","rightExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"rrbs"}}}}]}}}}}},"labels":[]}}',
@@ -7595,7 +7556,7 @@ def skip_deduplication_785(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toBoolean","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -7652,7 +7613,7 @@ def conditional_skip_deduplication_786(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -7761,10 +7722,9 @@ def BISMARK_DEDUPLICATE_788(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/deduplicate/main.nf", "alias": "BISMARK_DEDUPLICATE", "name": "BISMARK_DEDUPLICATE"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_DEDUPLICATE","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_DEDUPLICATE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_DEDUPLICATE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_DEDUPLICATE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -7774,9 +7734,7 @@ def BISMARK_DEDUPLICATE_788(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -7823,7 +7781,7 @@ def mix_790(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -7996,10 +7954,9 @@ def BISMARK_METHYLATIONEXTRACTOR_794(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/methylationextractor/main.nf", "alias": "BISMARK_METHYLATIONEXTRACTOR", "name": "BISMARK_METHYLATIONEXTRACTOR"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_METHYLATIONEXTRACTOR","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bedgraph\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"methylation_calls\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"coverage\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"mbias\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":4}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_METHYLATIONEXTRACTOR\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":5}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -8009,9 +7966,7 @@ def BISMARK_METHYLATIONEXTRACTOR_794(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -8060,7 +8015,7 @@ def mix_795(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8170,10 +8125,9 @@ def BISMARK_COVERAGE2CYTOSINE_798(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/coverage2cytosine/main.nf", "alias": "BISMARK_COVERAGE2CYTOSINE", "name": "BISMARK_COVERAGE2CYTOSINE"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_COVERAGE2CYTOSINE","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"coverage\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_COVERAGE2CYTOSINE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_COVERAGE2CYTOSINE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"summary\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_COVERAGE2CYTOSINE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_COVERAGE2CYTOSINE\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -8183,9 +8137,7 @@ def BISMARK_COVERAGE2CYTOSINE_798(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -8233,7 +8185,7 @@ def mix_799(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8321,7 +8273,7 @@ def map_787(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"map","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"ListExpression":[{"VariableExpression":"meta"},{"VariableExpression":"report"},{"ListExpression":[]}]}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":["meta","report"]}}]}}}}}},"labels":[]}}',
@@ -8380,7 +8332,7 @@ def join_789(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8468,7 +8420,7 @@ def join_801(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8526,7 +8478,7 @@ def join_802(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8629,10 +8581,9 @@ def BISMARK_REPORT_803(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/report/main.nf", "alias": "BISMARK_REPORT", "name": "BISMARK_REPORT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_REPORT","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_REPORT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_REPORT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -8642,9 +8593,7 @@ def BISMARK_REPORT_803(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -8689,7 +8638,7 @@ def mix_804(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -8746,7 +8695,7 @@ def collect_805(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"PropertyExpression":{"objectExpression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}},"property":"name"}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -8803,7 +8752,7 @@ def ifEmpty_806(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -8860,7 +8809,7 @@ def collect_807(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -8917,7 +8866,7 @@ def ifEmpty_808(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -8974,7 +8923,7 @@ def collect_809(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":2}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -9031,7 +8980,7 @@ def ifEmpty_810(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -9088,7 +9037,7 @@ def collect_811(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -9145,7 +9094,7 @@ def ifEmpty_812(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -9202,7 +9151,7 @@ def collect_813(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -9259,7 +9208,7 @@ def ifEmpty_814(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -9370,10 +9319,9 @@ def BISMARK_SUMMARY_815(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/bismark/summary/main.nf", "alias": "BISMARK_SUMMARY", "name": "BISMARK_SUMMARY"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"BISMARK_SUMMARY","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"summary\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_SUMMARY\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"BISMARK_SUMMARY\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -9383,9 +9331,7 @@ def BISMARK_SUMMARY_815(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -9430,7 +9376,7 @@ def mix_816(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -9535,10 +9481,9 @@ def SAMTOOLS_SORT_DEDUPLICATED_817(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bismark.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BISMARK'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/sort/main.nf", "alias": "SAMTOOLS_SORT_DEDUPLICATED", "name": "SAMTOOLS_SORT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_SORT_DEDUPLICATED","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bam\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"csi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_SORT_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -9548,9 +9493,7 @@ def SAMTOOLS_SORT_DEDUPLICATED_817(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -9596,7 +9539,7 @@ def mix_818(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -9653,7 +9596,7 @@ def unique_830(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"unique","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"PropertyExpression":{"objectExpression":{"VariableExpression":"it"},"property":"baseName"}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -9711,7 +9654,7 @@ def mix_831(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -9768,7 +9711,7 @@ def Channel_empty___836(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -9827,7 +9770,7 @@ def mix_838(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -9886,7 +9829,7 @@ def mix_840(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -9994,10 +9937,9 @@ def SAMTOOLS_INDEX_ALIGNMENTS_841(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/index/main.nf", "alias": "SAMTOOLS_INDEX_ALIGNMENTS", "name": "SAMTOOLS_INDEX"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_INDEX_ALIGNMENTS","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_ALIGNMENTS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"csi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_ALIGNMENTS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"crai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_ALIGNMENTS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_ALIGNMENTS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -10007,9 +9949,7 @@ def SAMTOOLS_INDEX_ALIGNMENTS_841(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -10057,7 +9997,7 @@ def mix_842(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10116,7 +10056,7 @@ def join_843(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10220,10 +10160,9 @@ def SAMTOOLS_FLAGSTAT_844(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/flagstat/main.nf", "alias": "SAMTOOLS_FLAGSTAT", "name": "SAMTOOLS_FLAGSTAT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_FLAGSTAT","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"flagstat\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_FLAGSTAT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_FLAGSTAT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -10233,9 +10172,7 @@ def SAMTOOLS_FLAGSTAT_844(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -10281,7 +10218,7 @@ def mix_847(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10340,7 +10277,7 @@ def join_845(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10444,10 +10381,9 @@ def SAMTOOLS_STATS_846(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/stats/main.nf", "alias": "SAMTOOLS_STATS", "name": "SAMTOOLS_STATS"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_STATS","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"ListExpression":[]}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"stats\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_STATS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_STATS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -10457,9 +10393,7 @@ def SAMTOOLS_STATS_846(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -10505,7 +10439,7 @@ def mix_848(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10565,7 +10499,7 @@ def mix_855(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10736,10 +10670,9 @@ def SAMTOOLS_INDEX_DEDUPLICATED_854(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/samtools/index/main.nf", "alias": "SAMTOOLS_INDEX_DEDUPLICATED", "name": "SAMTOOLS_INDEX"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"SAMTOOLS_INDEX_DEDUPLICATED","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"csi\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"crai\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"SAMTOOLS_INDEX_DEDUPLICATED\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -10749,9 +10682,7 @@ def SAMTOOLS_INDEX_DEDUPLICATED_854(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -10830,7 +10761,7 @@ def join_861(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -10940,10 +10871,9 @@ def METHYLDACKEL_EXTRACT_862(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/methyldackel/extract/main.nf", "alias": "METHYLDACKEL_EXTRACT", "name": "METHYLDACKEL_EXTRACT"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"METHYLDACKEL_EXTRACT","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"bedgraph\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"METHYLDACKEL_EXTRACT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"methylkit\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"METHYLDACKEL_EXTRACT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"METHYLDACKEL_EXTRACT\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -10953,9 +10883,7 @@ def METHYLDACKEL_EXTRACT_862(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -11002,7 +10930,7 @@ def mix_865(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -11061,7 +10989,7 @@ def join_863(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"join","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -11169,10 +11097,9 @@ def METHYLDACKEL_MBIAS_864(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/subworkflows/local/bwameth.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','BWAMETH'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/methyldackel/mbias/main.nf", "alias": "METHYLDACKEL_MBIAS", "name": "METHYLDACKEL_MBIAS"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"METHYLDACKEL_MBIAS","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"txt\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"METHYLDACKEL_MBIAS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"METHYLDACKEL_MBIAS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -11182,9 +11109,7 @@ def METHYLDACKEL_MBIAS_864(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -11230,7 +11155,7 @@ def mix_866(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -11288,7 +11213,7 @@ def unique_876(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"unique","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"PropertyExpression":{"objectExpression":{"VariableExpression":"it"},"property":"baseName"}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -11347,7 +11272,7 @@ def mix_877(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -11490,7 +11415,7 @@ def params_bamqc_regions_file_883(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"NotExpression":{"NotExpression":{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bamqc_regions_file"}}}}}},"labels":[]}}',
@@ -11546,7 +11471,7 @@ def conditional_params_bamqc_regions_file_884(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"condition"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -11605,7 +11530,7 @@ def Channel_fromPath__checkIfExists_true___params_bamqc_regions_file_885(
         download_files(channel_vals, LatchDir('latch://22353.account/your_output_directory'))
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"fromPath","arguments":{"ArgumentListExpression":{"expressions":[{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"checkIfExists"},"valueExpression":{"ConstantExpression":true}}}]},{"PropertyExpression":{"objectExpression":{"VariableExpression":"params"},"property":"bamqc_regions_file"}}]}}}}}},"labels":[]}}',
@@ -11662,7 +11587,7 @@ def toList_886(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toList","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -11718,7 +11643,7 @@ def ___887(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"value","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -11851,10 +11776,9 @@ def QUALIMAP_BAMQC_889(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/qualimap/bamqc/main.nf", "alias": "QUALIMAP_BAMQC", "name": "QUALIMAP_BAMQC"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"QUALIMAP_BAMQC","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"results\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"QUALIMAP_BAMQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"QUALIMAP_BAMQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -11864,9 +11788,7 @@ def QUALIMAP_BAMQC_889(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -11909,7 +11831,7 @@ def first_890(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"first","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -11966,7 +11888,7 @@ def mix_891(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -12099,10 +12021,9 @@ def PRESEQ_LCEXTRAP_892(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/preseq/lcextrap/main.nf", "alias": "PRESEQ_LCEXTRAP", "name": "PRESEQ_LCEXTRAP"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"PRESEQ_LCEXTRAP","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"lc_extrap\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PRESEQ_LCEXTRAP\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"log\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PRESEQ_LCEXTRAP\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"PRESEQ_LCEXTRAP\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -12112,9 +12033,7 @@ def PRESEQ_LCEXTRAP_892(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -12158,7 +12077,7 @@ def first_893(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"first","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -12215,7 +12134,7 @@ def mix_894(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -12271,7 +12190,7 @@ def unique_895(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"unique","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -12327,7 +12246,7 @@ def collectFile_896(
         download_files(channel_vals, LatchDir('latch://22353.account/your_output_directory'))
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collectFile","arguments":{"ArgumentListExpression":{"expressions":[{"MapExpression":[{"MapEntryExpression":{"keyExpression":{"ConstantExpression":"name"},"valueExpression":{"ConstantExpression":"collated_versions.yml"}}}]}]}}}}}},"labels":[]}}',
@@ -12431,10 +12350,9 @@ def CUSTOM_DUMPSOFTWAREVERSIONS_897(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/custom/dumpsoftwareversions/main.nf", "alias": "CUSTOM_DUMPSOFTWAREVERSIONS", "name": "CUSTOM_DUMPSOFTWAREVERSIONS"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"CUSTOM_DUMPSOFTWAREVERSIONS","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"yml\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"CUSTOM_DUMPSOFTWAREVERSIONS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"mqc_yml\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"CUSTOM_DUMPSOFTWAREVERSIONS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"CUSTOM_DUMPSOFTWAREVERSIONS\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -12444,9 +12362,7 @@ def CUSTOM_DUMPSOFTWAREVERSIONS_897(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -12491,7 +12407,7 @@ def collect_910(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -12549,7 +12465,7 @@ def mix_911(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -12606,7 +12522,7 @@ def collect_912(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -12663,7 +12579,7 @@ def ifEmpty_913(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -12721,7 +12637,7 @@ def mix_914(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -12778,7 +12694,7 @@ def collect_915(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -12835,7 +12751,7 @@ def ifEmpty_916(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -12893,7 +12809,7 @@ def mix_917(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -12950,7 +12866,7 @@ def ifEmpty_819(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -13007,7 +12923,7 @@ def collect_820(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13065,7 +12981,7 @@ def mix_821(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13122,7 +13038,7 @@ def collect_822(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":2}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13180,7 +13096,7 @@ def mix_823(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13237,7 +13153,7 @@ def collect_824(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13295,7 +13211,7 @@ def mix_825(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13352,7 +13268,7 @@ def collect_826(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13410,7 +13326,7 @@ def mix_827(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13467,7 +13383,7 @@ def collect_828(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13525,7 +13441,7 @@ def mix_829(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bismark.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BISMARK'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13583,7 +13499,7 @@ def Channel_empty___851(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"empty","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -13672,7 +13588,7 @@ def collect_867(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13730,7 +13646,7 @@ def collect_868(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13789,7 +13705,7 @@ def mix_869(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13847,7 +13763,7 @@ def collect_870(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -13906,7 +13822,7 @@ def mix_871(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -13964,7 +13880,7 @@ def collect_872(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -14023,7 +13939,7 @@ def mix_873(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -14081,7 +13997,7 @@ def collect_874(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -14140,7 +14056,7 @@ def mix_875(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/subworkflows/local/bwameth.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'BWAMETH'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -14226,7 +14142,7 @@ def ifEmpty_918(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -14284,7 +14200,7 @@ def mix_919(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -14342,7 +14258,7 @@ def collect_923(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -14401,7 +14317,7 @@ def mix_924(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -14488,7 +14404,7 @@ def collect_926(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[{"ClosureExpression":{"code":{"BlockStatement":{"statements":[{"ReturnStatement":{"BinaryExpression":{"leftExpression":{"VariableExpression":"it"},"operation":"[","rightExpression":{"ConstantExpression":1}}}}],"scope":{"declaredVariables":[],"referencedClassVariables":[]},"labels":[]}},"parameters":[]}}]}}}}}},"labels":[]}}',
@@ -14545,7 +14461,7 @@ def ifEmpty_927(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"ifEmpty","arguments":{"ArgumentListExpression":{"expressions":[{"ListExpression":[]}]}}}}}},"labels":[]}}',
@@ -14603,7 +14519,7 @@ def mix_928(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',
@@ -14660,7 +14576,7 @@ def collect_929(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"collect","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -14716,7 +14632,7 @@ def toList_930(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toList","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -14772,7 +14688,7 @@ def toList_931(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toList","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -14828,7 +14744,7 @@ def toList_932(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toList","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -14941,10 +14857,9 @@ def MULTIQC_933(
 
     try:
         subprocess.run(
-            ['/root/nextflow','run','main.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir)],
+            ['/root/nextflow','run','/root/workflows/methylseq.nf','-profile','mamba','--input',str(wf_paths['wf_input']),'--genome',str(wf_genome),'--aligner',str(wf_aligner),'--outdir',str(wf_outdir),'-entry','METHYLSEQ'],
             env={
                 **os.environ,
-                "LATCH_INCLUDE_META": '{"path": "./modules/nf-core/multiqc/main.nf", "alias": "MULTIQC", "name": "MULTIQC"}',
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"this"},"method":"MULTIQC","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}},"labels":[]}}',
                 "LATCH_RETURN": '["{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"report\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"MULTIQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":0}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"data\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"MULTIQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":1}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"plots\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"MULTIQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":2}}}}},\\"labels\\":[]}}", "{\\"ExpressionStatement\\":{\\"expression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"VariableExpression\\":\\"versions\\"},\\"operation\\":\\"=\\",\\"rightExpression\\":{\\"BinaryExpression\\":{\\"leftExpression\\":{\\"PropertyExpression\\":{\\"objectExpression\\":{\\"VariableExpression\\":\\"MULTIQC\\"},\\"property\\":\\"out\\"}},\\"operation\\":\\"[\\",\\"rightExpression\\":{\\"ConstantExpression\\":3}}}}},\\"labels\\":[]}}"]',
                 "LATCH_PARAM_VALS": json.dumps(channel_vals),
@@ -14954,9 +14869,7 @@ def MULTIQC_933(
     except subprocess.CalledProcessError:
         log = Path("/root/.nextflow.log").read_text()
         print("\n\n\n\n\n" + log)
-
-        import time
-        time.sleep(10000)
+        raise
 
     out_channels = {}
     files = [Path(f) for f in glob.glob(".latch/task-outputs/*.json")]
@@ -15002,7 +14915,7 @@ def toList_934(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"toList","arguments":{"ArgumentListExpression":{"expressions":[]}}}}}},"labels":[]}}',
@@ -15060,7 +14973,7 @@ def mix_935(
 
 
         subprocess.run(
-            ['/root/nextflow', 'run', 'main.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir)],
+            ['/root/nextflow', 'run', '/root/workflows/methylseq.nf', '--input', str(wf_paths['wf_input']), '--genome', str(wf_genome), '--aligner', str(wf_aligner), '--outdir', str(wf_outdir), '-entry', 'METHYLSEQ'],
             env={
                 **os.environ,
                 "LATCH_EXPRESSION": '{"ExpressionStatement":{"expression":{"BinaryExpression":{"leftExpression":{"VariableExpression":"res"},"operation":"=","rightExpression":{"MethodCallExpression":{"objectExpression":{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}},"method":"mix","arguments":{"ArgumentListExpression":{"expressions":[{"MethodCallExpression":{"objectExpression":{"VariableExpression":"Channel"},"method":"placeholder","arguments":{"ArgumentListExpression":{"expressions":[]}}}}]}}}}}},"labels":[]}}',

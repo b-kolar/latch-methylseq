@@ -11,7 +11,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -25,7 +27,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -39,7 +43,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -53,7 +59,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -67,7 +75,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -83,7 +93,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -101,7 +113,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bwameth/align/main.nf",
-                "unaliased": "BWAMETH_ALIGN"
+                "unaliased": "BWAMETH_ALIGN",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -117,7 +131,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -137,7 +153,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/sort/main.nf",
-                "unaliased": "SAMTOOLS_SORT"
+                "unaliased": "SAMTOOLS_SORT",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -153,7 +171,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -175,7 +195,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/index/main.nf",
-                "unaliased": "SAMTOOLS_INDEX"
+                "unaliased": "SAMTOOLS_INDEX",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -191,7 +213,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -207,7 +231,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -225,7 +251,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/flagstat/main.nf",
-                "unaliased": "SAMTOOLS_FLAGSTAT"
+                "unaliased": "SAMTOOLS_FLAGSTAT",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -241,7 +269,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -259,7 +289,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/stats/main.nf",
-                "unaliased": "SAMTOOLS_STATS"
+                "unaliased": "SAMTOOLS_STATS",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -275,7 +307,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -291,7 +325,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -307,7 +343,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -323,7 +361,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -339,7 +379,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -355,7 +397,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -377,7 +421,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/picard/markduplicates/main.nf",
-                "unaliased": "PICARD_MARKDUPLICATES"
+                "unaliased": "PICARD_MARKDUPLICATES",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -399,7 +445,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/index/main.nf",
-                "unaliased": "SAMTOOLS_INDEX"
+                "unaliased": "SAMTOOLS_INDEX",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -415,7 +463,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -429,7 +479,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -443,7 +495,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -457,7 +511,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -471,7 +527,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -485,7 +543,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -501,7 +561,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -521,7 +583,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/methyldackel/extract/main.nf",
-                "unaliased": "METHYLDACKEL_EXTRACT"
+                "unaliased": "METHYLDACKEL_EXTRACT",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -537,7 +601,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -555,7 +621,9 @@
                     "versions"
                 ],
                 "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/methyldackel/mbias/main.nf",
-                "unaliased": "METHYLDACKEL_MBIAS"
+                "unaliased": "METHYLDACKEL_MBIAS",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -571,7 +639,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -587,7 +657,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -603,7 +675,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -619,7 +693,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -635,7 +711,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -651,7 +729,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -667,7 +747,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -683,7 +765,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -699,7 +783,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -715,7 +801,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         },
         {
@@ -731,7 +819,9 @@
                     
                 ],
                 "module": "",
-                "unaliased": ""
+                "unaliased": "",
+                "subWorkflowName": "BWAMETH",
+                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bwameth.nf"
             }
         }
     ],
