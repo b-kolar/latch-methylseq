@@ -1,0 +1,2 @@
+task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+1	8f/85e2fb	36120	METHYLSEQ:CAT_FASTQ (SRR389222)	COMPLETED	0	2024-04-06 11:35:01.764	75ms	0ms	-	-	-	-	-

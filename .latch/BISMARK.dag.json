@@ -13,7 +13,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -29,7 +29,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -45,7 +45,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -61,7 +61,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -79,7 +79,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -100,10 +100,10 @@
                     "unmapped",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/align/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/align/main.nf",
                 "unaliased": "BISMARK_ALIGN",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -121,7 +121,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -140,10 +140,10 @@
                     "csi",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/sort/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/samtools/sort/main.nf",
                 "unaliased": "SAMTOOLS_SORT",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -161,7 +161,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -179,7 +179,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -197,7 +197,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -215,7 +215,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -234,10 +234,10 @@
                     "report",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/deduplicate/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/deduplicate/main.nf",
                 "unaliased": "BISMARK_DEDUPLICATE",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -255,7 +255,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -273,7 +273,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -289,7 +289,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -305,7 +305,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -321,7 +321,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -346,10 +346,10 @@
                     "mbias",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/methylationextractor/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/methylationextractor/main.nf",
                 "unaliased": "BISMARK_METHYLATIONEXTRACTOR",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -367,7 +367,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -385,7 +385,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -403,7 +403,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -424,10 +424,10 @@
                     "summary",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/coverage2cytosine/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/coverage2cytosine/main.nf",
                 "unaliased": "BISMARK_COVERAGE2CYTOSINE",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -445,7 +445,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -461,7 +461,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -479,7 +479,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -497,7 +497,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -514,10 +514,10 @@
                     "report",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/report/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/report/main.nf",
                 "unaliased": "BISMARK_REPORT",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -535,7 +535,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -553,7 +553,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -571,7 +571,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -589,7 +589,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -607,7 +607,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -625,7 +625,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -643,7 +643,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -661,7 +661,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -679,7 +679,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -697,7 +697,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -715,7 +715,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -732,10 +732,10 @@
                     "summary",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/bismark/summary/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/bismark/summary/main.nf",
                 "unaliased": "BISMARK_SUMMARY",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -753,7 +753,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -772,10 +772,10 @@
                     "csi",
                     "versions"
                 ],
-                "module": "/Users/bronte/Documents/latch-methylseq/modules/nf-core/samtools/sort/main.nf",
+                "module": "/Users/ayush/Desktop/workflows/methylseq/modules/nf-core/samtools/sort/main.nf",
                 "unaliased": "SAMTOOLS_SORT",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -793,7 +793,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -811,7 +811,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -829,7 +829,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -847,7 +847,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -865,7 +865,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -883,7 +883,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -901,7 +901,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -919,7 +919,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -937,7 +937,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -955,7 +955,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -973,7 +973,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         },
         {
@@ -991,7 +991,7 @@
                 "module": "",
                 "unaliased": "",
                 "subWorkflowName": "BISMARK",
-                "subWorkflowPath": "/Users/bronte/Documents/latch-methylseq/subworkflows/local/bismark.nf"
+                "subWorkflowPath": "/Users/ayush/Desktop/workflows/methylseq/subworkflows/local/bismark.nf"
             }
         }
     ],

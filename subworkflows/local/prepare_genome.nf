@@ -7,6 +7,11 @@ include { BISMARK_GENOMEPREPARATION   } from '../../modules/nf-core/bismark/geno
 include { BWAMETH_INDEX               } from '../../modules/nf-core/bwameth/index/main'
 include { SAMTOOLS_FAIDX              } from '../../modules/nf-core/samtools/faidx/main'
 
+params.fasta = WorkflowMain.getGenomeAttribute(params, 'fasta')
+params.fasta_index = WorkflowMain.getGenomeAttribute(params, 'fasta_index')
+params.bismark_index = WorkflowMain.getGenomeAttribute(params, 'bismark')
+params.bwa_meth_index = WorkflowMain.getGenomeAttribute(params, 'bwa_meth')
+
 workflow PREPARE_GENOME {
 
     main:
