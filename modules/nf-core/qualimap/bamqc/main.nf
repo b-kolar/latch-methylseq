@@ -2,6 +2,9 @@ process QUALIMAP_BAMQC {
     tag "$meta.id"
     label 'process_medium'
 
+    cpus 8
+    memory "48 GB"
+
     conda "bioconda::qualimap=2.2.2d"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/qualimap:2.2.2d--1' :

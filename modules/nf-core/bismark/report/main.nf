@@ -2,6 +2,9 @@ process BISMARK_REPORT {
     tag "$meta.id"
     label 'process_low'
 
+    cpus 4
+    memory "16 GB"
+
     conda "bioconda::bismark=0.24.0"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/bismark:0.24.0--hdfd78af_0' :

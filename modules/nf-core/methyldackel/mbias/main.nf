@@ -2,6 +2,9 @@ process METHYLDACKEL_MBIAS {
     tag "$meta.id"
     label 'process_low'
 
+    cpus 4
+    memory "16 GB"
+
     conda "bioconda::methyldackel=0.6.0"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/methyldackel:0.6.0--h22771d5_0' :

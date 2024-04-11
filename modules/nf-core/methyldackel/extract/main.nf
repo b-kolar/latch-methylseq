@@ -2,6 +2,9 @@ process METHYLDACKEL_EXTRACT {
     tag "$meta.id"
     label 'process_medium'
 
+    cpus 8
+    memory "48 GB"
+
     conda "bioconda::methyldackel=0.6.0"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/methyldackel:0.6.0--h22771d5_0' :
