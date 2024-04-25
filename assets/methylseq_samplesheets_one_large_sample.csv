@@ -1,0 +1,2 @@
+sample,fastq_1,fastq_2
+SRR12823954,latch://22353.account/methylseq/sent_data/SRR13823954_1.fastq.gz,latch://22353.account/methylseq/sent_data/SRR13823954_2.fastq.gz

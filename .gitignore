@@ -11,3 +11,5 @@ testing*
 .nf-test.log
 test-datasets/
 .latch
+credentials
+register.sh

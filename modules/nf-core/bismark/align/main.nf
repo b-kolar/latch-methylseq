@@ -2,9 +2,6 @@ process BISMARK_ALIGN {
     tag "$meta.id"
     label 'process_high'
 
-    cpus 12
-    memory "72 GB"
-
     conda "bioconda::bismark=0.24.0"
     container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
         'https://depot.galaxyproject.org/singularity/bismark:0.24.0--hdfd78af_0' :
