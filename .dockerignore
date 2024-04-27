@@ -1,0 +1,6 @@
+.latch/.logs
+.latch/task-outputs
+.latch/published.json
+.nextflow
+work
+

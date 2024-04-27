@@ -1,0 +1,3 @@
+sample,fastq_1,fastq_2
+SRR389222_sub1,s3://latch-public/test-data/22353/SRR389222_sub1.fastq.gz,
+SRR389222_sub2,s3://latch-public/test-data/22353/SRR389222_sub2.fastq.gz,

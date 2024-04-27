@@ -41,7 +41,7 @@ env PATH=/opt/conda/bin:$PATH
 # Latch SDK
 # DO NOT REMOVE
 
-run /opt/conda/bin/pip install --upgrade latch==2.40.4.dev6
+run /opt/conda/bin/pip install --upgrade latch==2.40.4.dev10
 run mkdir /opt/latch
 
 # Copy workflow data (use .dockerignore to skip files)
