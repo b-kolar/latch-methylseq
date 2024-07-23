@@ -6,8 +6,7 @@ from pathlib import Path
 
 import typing_extensions
 from flytekit.core.annotation import FlyteAnnotation
-
-from latch.types.directory import LatchDir
+from latch.types.directory import LatchDir, LatchOutputDir
 from latch.types.file import LatchFile
 from latch.types.metadata import NextflowParameter
 
@@ -18,7 +17,15 @@ from latch.types.metadata import NextflowParameter
 
 @dataclass
 class Sample:
-    sample: str
+    sample: typing.Annotated[
+        str,
+        FlyteAnnotation({
+            "rules": [{
+                "regex": r"^\S+$",
+                "message": "Sample name must not contain any spaces",
+            }],
+        }),
+    ]
     fastq_1: LatchFile
     fastq_2: typing.Optional[LatchFile]
 
